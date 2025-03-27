@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoonFans - Social Platform</title>
+  <link rel="stylesheet" href="/css/index.css ">
+  <link rel="stylesheet" href="/css/shop.css ">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="logo">
+        <h1><span class="logo-moon">Moon</span><span class="logo-fans">Fans</span></h1>
+      </div>
+      
+      <div class="desktop-nav">
+        <a href="index.html"><button class="nav-icon"><img src="/images/home.png" alt=""></button></a>
+      <a href="explore.html"><button class="nav-icon"><img src="/images/compass.png" alt=""></button></a>
+      <a href="shop.html"><button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button></a>
+      <a href="messages.html"><button class="nav-icon"><img src="/images/send.png" alt=""></button></a>
+      <a href="notification.html"><button class="nav-icon"><img src="/images/bell.png" alt=""></button></a>
+        <div class="profile-pic">
+          <img src="/images/info.png" alt="Profile">
+        </div>
+        <button class="edit-page-btn">Edit my page <span>&rarr;</span></button>
+      </div>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <i data-feather="menu"></i>
+      </button>
+    </header>
+
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav>
+        <button class="menu-item active">
+          <img src="/images/menu.png" alt="">
+          <span>Home</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="user"></i>
+          <span>My page</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="bar-chart-2"></i>
+          <span>Dashboard</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="shopping-bag"></i>
+          <span>Purchased</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="message-circle"></i>
+          <span>Messages</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="search"></i>
+          <span>Explore</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="star"></i>
+          <span>Subscriptions</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="bookmark"></i>
+          <span>Bookmarks</span>
+        </button>
+        <button class="edit-page-btn mobile-edit-btn">Edit my page <span>&rarr;</span></button>
+      </nav>
+    </div>
+    <div class="container">
+      <header>
+          <h1>Shop</h1>
+          <p>Explore products from our creators</p>
+          <button class="add-new-btn"><i class="fas fa-plus"></i> Add New</button>
+      </header>
+
+      <div class="filters">
+          <div class="dropdown">
+              <button class="dropdown-btn">Latest <i class="fas fa-chevron-down"></i></button>
+              <div class="dropdown-content">
+                  <a href="#">Latest</a>
+                  <a href="#">Oldest</a>
+                  <a href="#">Price: Low to High</a>
+                  <a href="#">Price: High to Low</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropdown-btn">All Categories <i class="fas fa-chevron-down"></i></button>
+              <div class="dropdown-content">
+                  <a href="#">All Categories</a>
+                  <a href="#">Custom Content</a>
+                  <a href="#">Physical Products</a>
+                  <a href="#">Digital Products</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="products">
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="tag custom-content"><i class="fas fa-pencil-alt"></i> Custom content</span>
+                  <img src="/images/low.jpg" alt="Airbnb app on phone">
+                  <span class="price">$12.00</span>
+              </div>
+              <div class="product-info">
+                  <h3>dasda</h3>
+                  <p class="product-description">123elesdasdasdasda adasda</p>
+                  <div class="user-info">
+                      <img src="/images/image.png" alt="User avatar" class="avatar">
+                      <div>
+                          <p class="username">@scarlett</p>
+                          <p class="date">Dec 23, 2024</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="tag physical-products"><i class="fas fa-box"></i> Physical products</span>
+                  <img src="/images/high.jpg" alt="Women's heels">
+                  <span class="price">$79.99</span>
+              </div>
+              <div class="product-info">
+                  <h3>DREAM PAIRS Heels for Women Block Chunky Platform High Heel...</h3>
+                  <p class="product-description">About this item<br>MOST COMFORTABLE WOMAN HEELS: Retr...</p>
+                  <div class="user-info">
+                      <img src="/images/swag3.jpg" alt="User avatar" class="avatar">
+                      <div>
+                          <p class="username">@Bles</p>
+                          <p class="date">Jun 03, 2024</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="tag physical-products"><i class="fas fa-box"></i> Physical products</span>
+                  <img src="/images/speaker.jpg" alt="Bose SoundLink speaker">
+                  <span class="price">$249.99</span>
+              </div>
+              <div class="product-info">
+                  <h3>Bose SoundLink Revolve+ (Series II) Bluetooth Speaker, Portable...</h3>
+                  <p class="product-description">About this item<br>MORE SOUND ALL AROUND: Engineered to...</p>
+                  <div class="user-info">
+                      <img src="/images/swag1.jpg" alt="User avatar" class="avatar">
+                      <div>
+                          <p class="username">@chloé</p>
+                          <p class="date">Jun 03, 2024</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+      
+   
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav">
+        <a href="index.html"><button class="nav-icon"><img src="/images/home.png" alt=""></button></a>
+        <a href="explore.html"><button class="nav-icon"><img src="/images/compass.png" alt=""></button></a>
+        <a href="shop.html"><button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button></a>
+        <a href="messages.html"><button class="nav-icon"><img src="/images/send.png" alt=""></button></a>
+        <a href="notification.html"><button class="nav-icon"><img src="/images/bell.png" alt=""></button></a>
+      </nav>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

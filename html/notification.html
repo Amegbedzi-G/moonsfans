@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoonFans - Social Platform</title>
+  <link rel="stylesheet" href="/css/index.css ">
+  <link rel="stylesheet" href="/css/notification.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="logo">
+        <h1><span class="logo-moon">Moon</span><span class="logo-fans">Fans</span></h1>
+      </div>
+      
+      <div class="desktop-nav">
+        <button class="nav-icon"><img src="/images/home.png" alt=""></button>
+      <button class="nav-icon"><img src="/images/compass.png" alt=""></button>
+      <button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button>
+      <button class="nav-icon"><img src="/images/send.png" alt=""></button>
+      <button class="nav-icon"><img src="/images/bell.png" alt=""></button>
+        <div class="profile-pic">
+          <img src="/images/info.png" alt="Profile">
+        </div>
+        <button class="edit-page-btn">Edit my page <span>&rarr;</span></button>
+      </div>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <i data-feather="menu"></i>
+      </button>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav>
+        <button class="menu-item active">
+          <img src="/images/menu.png" alt="">
+          <span>Home</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="user"></i>
+          <span>My page</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="bar-chart-2"></i>
+          <span>Dashboard</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="shopping-bag"></i>
+          <span>Purchased</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="message-circle"></i>
+          <span>Messages</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="search"></i>
+          <span>Explore</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="star"></i>
+          <span>Subscriptions</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="bookmark"></i>
+          <span>Bookmarks</span>
+        </button>
+        <button class="edit-page-btn mobile-edit-btn">Edit my page <span>&rarr;</span></button>
+      </nav>
+    </div>
+
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <div class="section-header">ACCOUNT</div>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard <i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-user"></i> My page <i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="edit-page.html"><i class="fas fa-edit"></i> Edit my page <i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-comments"></i> Conversations <i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-wallet"></i> Wallet <i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-user-friends"></i> Referrals <i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-clock"></i> My stories <i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-check-circle"></i> Verified account! <i class="fas fa-chevron-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="section-header">LIVE STREAMING PRIVATE</div>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="#"><i class="fas fa-cog"></i> Settings <i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-inbox"></i> Requests received <span class="badge">1</span> <i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-paper-plane"></i> Requests sent <i class="fas fa-chevron-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="section-header">SUBSCRIPTION</div>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="#"><i class="fas fa-dollar-sign"></i> Subscription price <i class="fas fa-chevron-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+      <div class="main-content">
+          <div class="notifications-header">
+              <div class="title-section">
+                  <h1><img src="/images/bell.png" style="width: 25px;" alt=""> Notifications</h1>
+                  <div class="notification-actions">
+                      <button class="action-btn mark-read"><img src="/images/setting.png" style="20px;" alt=""></i></button>
+                      <button class="action-btn delete"><img src="/images/delete.png" style="width: 25px;" alt=""></i></button>
+                  </div>
+              </div>
+              <p class="subtitle">New subscribers, likes and new comments</p>
+              <div class="filter-section">
+                  <div class="filter-dropdown">
+                      <select>
+                          <option>All</option>
+                          <option>Comments</option>
+                          <option>Subscriptions</option>
+                          <option>Live Streams</option>
+                      </select>
+                  </div>
+              </div>
+          </div>
+
+          <div class="notifications-list">
+              <div class="notification-item">
+                  <div class="user-avatar">
+                      <img src="/images/image.png" alt="Steason's profile">
+                  </div>
+                  <div class="notification-content">
+                      <p><span class="username">Steason</span> comment you post <span class="highlight">Amazing Video Out!!</span></p>
+                      <span class="time">12 days ago</span>
+                  </div>
+              </div>
+
+              <div class="notification-item">
+                  <div class="user-avatar">
+                      <img src="/images/swag3.jpg" alt="Steason's profile">
+                  </div>
+                  <div class="notification-content">
+                      <p><span class="username">Steason</span> comment you post <span class="highlight">Amazing Video Out!!</span></p>
+                      <span class="time">12 days ago</span>
+                  </div>
+              </div>
+
+              <div class="notification-item">
+                  <div class="user-avatar">
+                      <img src="/images/image.png" alt="Steason's profile">
+                  </div>
+                  <div class="notification-content">
+                      <p><span class="username">Steason</span> has subscribed to your content</p>
+                      <span class="time">12 days ago</span>
+                  </div>
+              </div>
+
+              <div class="notification-item">
+                  <div class="user-avatar">
+                      <img src="/images/swag.jpg" alt="Steason's profile">
+                  </div>
+                  <div class="notification-content">
+                      <p><span class="username">Steason</span> streamed live</p>
+                      <span class="time">1 month ago</span>
+                  </div>
+              </div>
+
+              <div class="notification-item">
+                  <div class="user-avatar">
+                      <img src="/images/swag1.jpg" alt="Steason's profile">
+                  </div>
+                  <div class="notification-content">
+                      <p><span class="username">Steason</span> streamed live</p>
+                      <span class="time">2 months ago</span>
+                  </div>
+              </div>
+
+              <div class="notification-item">
+                  <div class="user-avatar">
+                      <img src="/images/swag3.jpg" alt="Steason's profile">
+                  </div>
+                  <div class="notification-content">
+                      <p><span class="username">Steason</span> streamed live</p>
+                      <span class="time">2 months ago</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav">
+        <a href="index.html"><button class="nav-icon"><img src="/images/home.png" alt=""></button></a>
+        <a href="explore.html"><button class="nav-icon"><img src="/images/compass.png" alt=""></button></a>
+        <a href="shop.html"><button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button></a>
+        <a href="messages.html"><button class="nav-icon"><img src="/images/send.png" alt=""></button></a>
+        <a href="notification.html"><button class="nav-icon"><img src="/images/bell.png" alt=""></button></a>
+      </nav>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

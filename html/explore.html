@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoonFans - Explore Platform</title>
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/explore.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="logo">
+        <h1><span class="logo-moon">Moon</span><span class="logo-fans">Fans</span></h1>
+      </div>
+      
+      <div class="desktop-nav">
+        <a href="index.html"><button class="nav-icon"><img src="/images/home.png" alt=""></button></a>
+        <a href="explore.html"><button class="nav-icon"><img src="/images/compass.png" alt=""></button></a>
+        <a href="shop.html"><button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button></a>
+        <a href="messages.html"><button class="nav-icon"><img src="/images/send.png" alt=""></button></a>
+        <a href="notification.html"><button class="nav-icon"><img src="/images/bell.png" alt=""></button></a>
+        <div class="profile-pic">
+          <img src="/images/info.png" alt="Profile">
+        </div>
+        <button class="edit-page-btn">Edit my page <span>&rarr;</span></button>
+      </div>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <i data-feather="menu"></i>
+      </button>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav>
+        <button class="menu-item">
+          <img src="/images/menu.png" alt="">
+          <span>Home</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="user"></i>
+          <span>My page</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="bar-chart-2"></i>
+          <span>Dashboard</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="shopping-bag"></i>
+          <span>Purchased</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="message-circle"></i>
+          <span>Messages</span>
+        </button>
+        <button class="menu-item active">
+          <i data-feather="search"></i>
+          <span>Explore</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="star"></i>
+          <span>Subscriptions</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="bookmark"></i>
+          <span>Bookmarks</span>
+        </button>
+        <button class="edit-page-btn mobile-edit-btn">Edit my page <span>&rarr;</span></button>
+      </nav>
+    </div>
+
+      <!-- Desktop Content -->
+      <main class="exp-content">
+        <div class="exp-header">
+          <h1 class="exp-title">Explore our Creators</h1>
+          <p class="exp-subtitle">The best of content creators are here <a href="#" class="exp-link">Explore Posts</a></p>
+        </div>
+
+        <div class="exp-layout">
+          <!-- Filter Sidebar -->
+          <div class="exp-filter-sidebar">
+            <div class="exp-filter-header">
+              <img src="/images/filter.png" style="width: 25px;rotate: 180deg;" alt=""> Filter by
+            </div>
+            <div class="exp-filter-options">
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-heart-icon"><img src="/images/heart.png" style="width: 25px;" alt=""></div>
+                <span>Popular</span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-medal-icon"><img src="/images/medal.png" style="width: 25px;" alt=""></div>
+                <span>Featured Creators</span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-lightning-icon"><img src="/images/flash.png" style="width: 25px;" alt=""></div>
+                <span>More active</span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-group-icon"><img src="/images/gender.png" alt=""></div>
+                <span>New Creators</span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-lock-icon"><img src="/images/unlocked.png" alt=""></div>
+                <span>Free Subscription</span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-people-icon"><img src="/images/gender-equality.png" style="width: 25px;" alt=""></div>
+                <span>Gender and Age</span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-live-icon"><img src="/images/live.png" alt=""></div>
+                <span>Live</span>
+              </button>
+              <div class="exp-filter-header">
+                <img src="/images/menu.png" style="width: 25px;" alt=""> Categories
+              </div>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-lightning-icon"><img src="/images/animation.png" style="width: 25px;" alt=""></div>
+                <span>Animation</span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-lightning-icon"><img src="/images/artist.png" style="width: 25px;" alt=""></div>
+                <span>Artist</span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-lightning-icon"><img src="/images/designer.png" style="width: 25px;" alt=""></div>
+                <span>Designer </span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-lightning-icon"><img src="/images/Developer.png" style="width: 25px;" alt=""></div>
+                <span>Developer </span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-lightning-icon"><img src="/images/drawing.png" style="width: 25px;" alt=""></div>
+                <span>Drawing and Painting </span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-lightning-icon"><img src="/images/sparkle.png" style="width: 25px;" alt=""></div>
+                <span>Others </span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-lightning-icon"><img src="/images/photo.png" style="width: 25px;" alt=""></div>
+                <span>Photography </span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-lightning-icon"><img src="/images/podcasts.png" style="width: 25px;" alt=""></div>
+                <span>Podcast </span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-lightning-icon"><img src="/images/video.png" style="width: 25px;" alt=""></div>
+                <span>Video and Film </span>
+              </button>
+              <button class="exp-filter-option">
+                <div class="exp-filter-icon exp-lightning-icon"><img src="/images/writing.png" style="width: 25px;" alt=""></div>
+                <span>Writing </span>
+              </button>
+
+            </div>
+          </div>
+
+          <!-- Creators Grid -->
+          <div class="exp-creators-grid">
+            <!-- Creator Card 1 -->
+            <div class="exp-creator-card">
+              <div class="exp-creator-banner"></div>
+              <div class="exp-creator-profile">
+                <div class="exp-profile-image-container">
+                  <img src="/images/image.png" alt="sarah3" class="exp-profile-image">
+                </div>
+                <div class="exp-creator-info">
+                  <div class="exp-creator-name">
+                    sarah3
+                    <span class="exp-verified-badge"><img src="/images/verify.png" style="width: 25px;" alt=""></span>
+                  </div>
+                  <div class="exp-creator-stats">
+                    <div class="exp-stat">
+                      <img src="/images/gallery.png" alt="Posts" class="exp-stat-icon">
+                      <span>2</span>
+                    </div>
+                    <div class="exp-stat">
+                      <img src="/images/cam-recorder.png" alt="Videos" class="exp-stat-icon" >
+                      <span>0</span>
+                    </div>
+                    <div class="exp-stat">
+                      <img src="/images/voice.png" alt="Audio" class="exp-stat-icon">
+                      <span>0</span>
+                    </div>
+                  </div>
+                  <div class="exp-creator-actions">
+                    <a href="#" class="exp-page-btn">Go to Page</a>
+                    <a href="#" class="exp-subscribe-btn">$15.00/mo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Creator Card 2 -->
+            <div class="exp-creator-card">
+              <div class="exp-creator-banner exp-beach-bg"></div>
+              <div class="exp-creator-profile">
+                <div class="exp-profile-image-container">
+                  <img src="/images/swag.jpg" alt="scarlett" class="exp-profile-image">
+                </div>
+                <div class="exp-creator-info">
+                  <div class="exp-creator-name">
+                    scarlett
+                    <span class="exp-gold-badge"><img src="/images/verify.png" style="width: 25px;" alt=""></span>
+                  </div>
+                  <div class="exp-creator-stats">
+                    <div class="exp-stat">
+                      <img src="/images/gallery.png" alt="Posts" class="exp-stat-icon">
+                      <span>4</span>
+                    </div>
+                    <div class="exp-stat">
+                      <img src="/images/cam-recorder.png" alt="Videos" class="exp-stat-icon">
+                      <span>2</span>
+                    </div>
+                    <div class="exp-stat">
+                      <img src="/images/voice.png" alt="Audio" class="exp-stat-icon">
+                      <span>0</span>
+                    </div>
+                  </div>
+                  <div class="exp-creator-actions">
+                    <a href="#" class="exp-page-btn">Go to Page</a>
+                    <a href="#" class="exp-subscribe-btn">$10.00/mo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Creator Card 3 -->
+            <div class="exp-creator-card">
+              <div class="exp-creator-banner"></div>
+              <div class="exp-creator-profile">
+                <div class="exp-profile-image-container">
+                  <img src="/images/swag3.jpg" alt="emma" class="exp-profile-image">
+                </div>
+                <div class="exp-creator-info">
+                  <div class="exp-creator-name">
+                    emma
+                    <span class="exp-verified-badge"><img src="/images/verify.png" style="width: 25px;" alt=""></span>
+                  </div>
+                  <div class="exp-creator-stats">
+                    <div class="exp-stat">
+                      <img src="/images/gallery.png" alt="Posts" class="exp-stat-icon">
+                      <span>8</span>
+                    </div>
+                    <div class="exp-stat">
+                      <img src="/images/cam-recorder.png" alt="Videos" class="exp-stat-icon">
+                      <span>3</span>
+                    </div>
+                    <div class="exp-stat">
+                      <img src="/images/voice.png" alt="Audio" class="exp-stat-icon">
+                      <span>1</span>
+                    </div>
+                  </div>
+                  <div class="exp-creator-actions">
+                    <a href="#" class="exp-page-btn">Go to Page</a>
+                    <a href="#" class="exp-subscribe-btn">$12.00/mo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Creator Card 4 -->
+            <div class="exp-creator-card">
+              <div class="exp-creator-banner exp-sunset-bg"></div>
+              <div class="exp-creator-profile">
+                <div class="exp-profile-image-container">
+                  <img src="/images/swag1.jpg" alt="alex" class="exp-profile-image">
+                </div>
+                <div class="exp-creator-info">
+                  <div class="exp-creator-name">
+                    alex
+                    <span class="exp-verified-badge"><img src="/images/verify.png" style="width: 25px;" alt=""></span>
+                  </div>
+                  <div class="exp-creator-stats">
+                    <div class="exp-stat">
+                      <img src="/images/gallery.png" alt="Posts" class="exp-stat-icon">
+                      <span>5</span>
+                    </div>
+                    <div class="exp-stat">
+                      <img src="/images/cam-recorder.png" alt="Videos" class="exp-stat-icon">
+                      <span>1</span>
+                    </div>
+                    <div class="exp-stat">
+                      <img src="/images/voice.png" alt="Audio" class="exp-stat-icon">
+                      <span>0</span>
+                    </div>
+                  </div>
+                  <div class="exp-creator-actions">
+                    <a href="#" class="exp-page-btn">Go to Page</a>
+                    <a href="#" class="exp-subscribe-btn">$8.00/mo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Mobile Content -->
+       
+      <main class="mob-exp-content">
+        <br>
+        <div class="mob-exp-header">
+          <h1 class="mob-exp-title">Explore our Creators</h1>
+          <p class="mob-exp-subtitle">The best of content creators are here</p>
+          <a href="#" class="mob-exp-link">Explore Posts</a>
+        </div>
+
+        <div class="mob-exp-filters">
+          <button class="mob-exp-filter-btn">
+            <img src="/images/filter.png" style="width: 20px;" alt=""> Filter by
+          </button>
+          <div class="exp-filter-options">
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-heart-icon"><img src="/images/heart.png" style="width: 25px;" alt=""></div>
+              <span>Popular</span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-medal-icon"><img src="/images/medal.png" style="width: 25px;" alt=""></div>
+              <span>Featured Creators</span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-lightning-icon"><img src="/images/flash.png" style="width: 25px;" alt=""></div>
+              <span>More active</span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-group-icon"><img src="/images/gender.png" alt=""></div>
+              <span>New Creators</span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-lock-icon"><img src="/images/unlocked.png" alt=""></div>
+              <span>Free Subscription</span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-people-icon"><img src="/images/gender-equality.png" style="width: 25px;" alt=""></div>
+              <span>Gender and Age</span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-live-icon"><img src="/images/live.png" alt=""></div>
+              <span>Live</span>
+            </button>
+
+            <div class="mob-exp-filters">
+              <button class="mob-exp-filter-btn">
+                <img src="/images/menu.png" style="width: 20px;" alt=""> Categories
+              </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-lightning-icon"><img src="/images/animation.png" style="width: 25px;" alt=""></div>
+              <span>Animation</span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-lightning-icon"><img src="/images/artist.png" style="width: 25px;" alt=""></div>
+              <span>Artist</span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-lightning-icon"><img src="/images/designer.png" style="width: 25px;" alt=""></div>
+              <span>Designer </span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-lightning-icon"><img src="/images/Developer.png" style="width: 25px;" alt=""></div>
+              <span>Developer </span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-lightning-icon"><img src="/images/drawing.png" style="width: 25px;" alt=""></div>
+              <span>Drawing and Painting </span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-lightning-icon"><img src="/images/sparkle.png" style="width: 25px;" alt=""></div>
+              <span>Others </span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-lightning-icon"><img src="/images/photo.png" style="width: 25px;" alt=""></div>
+              <span>Photography </span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-lightning-icon"><img src="/images/podcasts.png" style="width: 25px;" alt=""></div>
+              <span>Podcast </span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-lightning-icon"><img src="/images/video.png" style="width: 25px;" alt=""></div>
+              <span>Video and Film </span>
+            </button>
+            <button class="exp-filter-option">
+              <div class="exp-filter-icon exp-lightning-icon"><img src="/images/writing.png" style="width: 25px;" alt=""></div>
+              <span>Writing </span>
+            </button>
+
+          </div>
+          
+
+        <div class="mob-exp-creators">
+          <!-- Creator Card 1 -->
+          <div class="mob-exp-creator-card">
+            <div class="mob-exp-creator-banner"></div>
+            <div class="mob-exp-creator-profile">
+              <div class="mob-exp-profile-image-container">
+                <img src="/images/image.png" alt="sarah3" class="mob-exp-profile-image">
+              </div>
+              <div class="mob-exp-creator-info">
+                <div class="mob-exp-creator-name">
+                  sarah3
+                  <span class="mob-exp-verified-badge"><img src="/images/verify.png" style="width: 20px;" alt=""></span>
+                </div>
+                <div class="mob-exp-creator-stats">
+                  <div class="mob-exp-stat">
+                    <img src="/images/gallery.png" alt="Posts" class="mob-exp-stat-icon">
+                    <span>2</span>
+                  </div>
+                  <div class="mob-exp-stat">
+                    <img src="/images/cam-recorder.png" alt="Videos" class="mob-exp-stat-icon">
+                    <span>0</span>
+                  </div>
+                  <div class="mob-exp-stat">
+                    <img src="/images/voice.png" alt="Audio" class="mob-exp-stat-icon">
+                    <span>0</span>
+                  </div>
+                </div>
+                <div class="mob-exp-creator-actions">
+                  <a href="#" class="mob-exp-page-btn">Go to Page</a>
+                  <a href="#" class="mob-exp-subscribe-btn">$15.00/mo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Creator Card 2 -->
+          <div class="mob-exp-creator-card">
+            <div class="mob-exp-creator-banner mob-exp-beach-bg"></div>
+            <div class="mob-exp-creator-profile">
+              <div class="mob-exp-profile-image-container">
+                <img src="/images/swag.jpg" alt="scarlett" class="mob-exp-profile-image">
+              </div>
+              <div class="mob-exp-creator-info">
+                <div class="mob-exp-creator-name">
+                  scarlett
+                  <span class="mob-exp-verified-badge"><img src="/images/verify.png" style="width: 20px;" alt=""></span>
+                </div>
+                <div class="mob-exp-creator-stats">
+                  <div class="mob-exp-stat">
+                    <img src="/images/gallery.png" alt="Posts" class="mob-exp-stat-icon">
+                    <span>4</span>
+                  </div>
+                  <div class="mob-exp-stat">
+                    <img src="/images/cam-recorder.png" alt="Videos" class="mob-exp-stat-icon">
+                    <span>2</span>
+                  </div>
+                  <div class="mob-exp-stat">
+                    <img src="/images/voice.png" alt="Audio" class="mob-exp-stat-icon">
+                    <span>0</span>
+                  </div>
+                </div>
+                <div class="mob-exp-creator-actions">
+                  <a href="#" class="mob-exp-page-btn">Go to Page</a>
+                  <a href="#" class="mob-exp-subscribe-btn">$10.00/mo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav">
+      <a href="index.html"><button class="nav-icon"><img src="/images/home.png" alt=""></button></a>
+      <a href="explore.html"><button class="nav-icon mobile-active"><img src="/images/compass.png" alt=""></button></a>
+      <a href="shop.html"><button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button></a>
+      <a href="messages.html"><button class="nav-icon"><img src="/images/send.png" alt=""></button></a>
+      <a href="notification.html"><button class="nav-icon"><img src="/images/bell.png" alt=""></button></a>
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

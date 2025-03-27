@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversations</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/edit-page.css">
+    <link rel="stylesheet" href="/css/conversations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navigation Bar -->
+        <header class="top-nav">
+          <div class="logo">
+            <h1><span class="logo-moon">Moon</span><span class="logo-fans">Fans</span></h1>
+          </div>
+          
+          <div class="desktop-nav">
+            <button class="nav-icon"><img src="/images/home.png" alt=""></button>
+            <button class="nav-icon"><img src="/images/compass.png" alt=""></button>
+            <button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button>
+            <button class="nav-icon"><img src="/images/send.png" alt=""></button>
+            <button class="nav-icon"><img src="/images/bell.png" alt=""></button>
+            <div class="profile-pic">
+              <img src="/images/info.png" alt="Profile">
+            </div>
+            <button class="edit-page-btn">Edit my page <span>&rarr;</span></button>
+          </div>
+          
+          <button class="menu-toggle" id="menuToggle">
+            <i data-feather="menu"></i>
+          </button>
+        </header>
+    
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="mobile-menu" id="mobileMenu">
+          <nav>
+            <button class="menu-item active">
+              <img src="/images/menu.png" alt="">
+              <span>Home</span>
+            </button>
+            <button class="menu-item">
+              <i data-feather="user"></i>
+              <span>My page</span>
+            </button>
+            <button class="menu-item">
+              <i data-feather="bar-chart-2"></i>
+              <span>Dashboard</span>
+            </button>
+            <button class="menu-item">
+              <i data-feather="shopping-bag"></i>
+              <span>Purchased</span>
+            </button>
+            <button class="menu-item">
+              <i data-feather="message-circle"></i>
+              <span>Messages</span>
+            </button>
+            <button class="menu-item">
+              <i data-feather="search"></i>
+              <span>Explore</span>
+            </button>
+            <button class="menu-item">
+              <i data-feather="star"></i>
+              <span>Subscriptions</span>
+            </button>
+            <button class="menu-item">
+              <i data-feather="bookmark"></i>
+              <span>Bookmarks</span>
+            </button>
+            <button class="edit-page-btn mobile-edit-btn">Edit my page <span>&rarr;</span></button>
+          </nav>
+        </div>
+    
+        <div class="container">
+            <div class="sidebar">
+                <div class="sidebar-section">
+                    <div class="section-header">ACCOUNT</div>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-user"></i> My page <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-edit"></i> Edit my page <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                        <li class="active">
+                            <a href="#"><i class="fas fa-comments"></i> Conversations <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-wallet"></i> Wallet <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-user-friends"></i> Referrals <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="far fa-clock"></i> My stories <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-check-circle"></i> Verified account! <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="section-header">LIVE STREAMING PRIVATE</div>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="#"><i class="fas fa-cog"></i> Settings <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-inbox"></i> Requests received <span class="badge">1</span> <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-paper-plane"></i> Requests sent <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="section-header">SUBSCRIPTION</div>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="#"><i class="fas fa-dollar-sign"></i> Subscription price <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Conversations Content -->
+            <div class="content">
+                <div class="header">
+                    <h1><i class="fas fa-paper-plane"></i> Conversations</h1>
+                    <p>Setting up your conversations</p>
+                </div>
+                
+                <div class="conversations-settings">
+                    <!-- Toggle Options -->
+                    <div class="toggle-option">
+                        <div class="toggle-text">Receive private messages</div>
+                        <label class="toggle">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="toggle-option">
+                        <div class="toggle-text">Send welcome message to new subscribers</div>
+                        <label class="toggle">
+                            <input type="checkbox">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    
+                    <!-- Welcome Message Price -->
+                    <div class="form-group">
+                        <label for="welcome-price">Welcome message price (Optional)</label>
+                        <div class="price-input">
+                            <span class="currency-symbol">$</span>
+                            <input type="text" id="welcome-price" value="0.00">
+                        </div>
+                        <div class="form-hint">* Minimum $1 - Maximum $100</div>
+                    </div>
+                    
+                    <!-- File Upload Section -->
+                    <div class="form-group">
+                        <label>Add a file (Optional)</label>
+                        <div class="file-upload-area">
+                            <div class="file-upload-box">
+                                <div class="upload-icon">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                </div>
+                                <div class="upload-text">1 file was chosen</div>
+                                <button class="browse-btn">Browse file</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Uploaded File -->
+                    <div class="uploaded-file">
+                        <div class="file-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="file-info">
+                            <div class="file-name">667a7b7a18d3ce1739dd4769diqvvbrvedkwke9fflci.mp4</div>
+                            <div class="file-size">1.33 MB</div>
+                        </div>
+                        <div class="file-actions">
+                            <button class="file-action-btn download"><i class="fas fa-download"></i></button>
+                            <button class="file-action-btn delete"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Welcome Message -->
+                    <div class="form-group">
+                        <label for="welcome-message">Welcome message to new subscribers</label>
+                        <textarea id="welcome-message" rows="5" placeholder="Enter your welcome message here..."></textarea>
+                    </div>
+                    
+                    <!-- Save Button -->
+                    <button class="save-button">Save Changes</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Bottom Navigation -->
+        <nav class="mobile-nav">
+            <a href="index.html"><button class="nav-icon"><img src="/images/home.png" alt=""></button></a>
+            <a href="explore.html"><button class="nav-icon"><img src="/images/compass.png" alt=""></button></a>
+            <a href="shop.html"><button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button></a>
+            <a href="messages.html"><button class="nav-icon"><img src="/images/send.png" alt=""></button></a>
+            <a href="notification.html"><button class="nav-icon"><img src="/images/bell.png" alt=""></button></a>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

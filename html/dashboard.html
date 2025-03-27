@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoonFans - Social Platform</title>
+  <link rel="stylesheet" href="/css/index.css ">
+  <link rel="stylesheet" href="/css/dashbaord.css ">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="logo">
+        <h1><span class="logo-moon">Moon</span><span class="logo-fans">Fans</span></h1>
+      </div>
+      
+      <div class="desktop-nav">
+        <button class="nav-icon"><img src="/images/home.png" alt=""></button>
+      <button class="nav-icon"><img src="/images/compass.png" alt=""></button>
+      <button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button>
+      <button class="nav-icon"><img src="/images/send.png" alt=""></button>
+      <button class="nav-icon"><img src="/images/bell.png" alt=""></button>
+        <div class="profile-pic">
+          <img src="/images/info.png" alt="Profile">
+        </div>
+        <button class="edit-page-btn">Edit my page <span>&rarr;</span></button>
+      </div>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <i data-feather="menu"></i>
+      </button>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav>
+        <button class="menu-item active">
+          <img src="/images/menu.png" alt="">
+          <span>Home</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="user"></i>
+          <span>My page</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="bar-chart-2"></i>
+          <span>Dashboard</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="shopping-bag"></i>
+          <span>Purchased</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="message-circle"></i>
+          <span>Messages</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="search"></i>
+          <span>Explore</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="star"></i>
+          <span>Subscriptions</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="bookmark"></i>
+          <span>Bookmarks</span>
+        </button>
+        <button class="edit-page-btn mobile-edit-btn">Edit my page <span>&rarr;</span></button>
+      </nav>
+    </div>
+    <div class="container">
+        <header class="dashboard-header">
+            <div class="icon-container">
+                <i class="fas fa-chart-pie"></i>
+            </div>
+            <h1>Dashboard</h1>
+            <p class="subtitle">Statistics and balance of your account</p>
+        </header>
+
+        <div class="stats-grid">
+            <!-- Row 1 -->
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #ffebee;">
+                    <img src="/images/hold.png" alt="">
+                </div>
+                <div class="stat-content">
+                    <h2 class="stat-value">$2,428.30</h2>
+                    <p class="stat-label">Earnings Net</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #ffebee;">
+                    <img src="/images/1.png" alt="">
+                </div>
+                <div class="stat-content">
+                    <h2 class="stat-value">$12,036.80</h2>
+                    <p class="stat-label">Balance <a href="#" class="action-link">Make withdrawal</a></p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #ffebee;">
+                    <img src="/images/users.png.crdownload" alt="">
+                </div>
+                <div class="stat-content">
+                    <h2 class="stat-value">1</h2>
+                    <p class="stat-label">Subscriptions active</p>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #ffebee;">
+                    <img src="/images/refresh.png" alt="">
+                </div>
+                <div class="stat-content">
+                    <h2 class="stat-value">$66.50</h2>
+                    <p class="stat-label">Net earnings from subscriptions</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #ffebee;">
+                   <img src="/images/tip.png" alt="">
+                </div>
+                <div class="stat-content">
+                    <h2 class="stat-value">$217.55</h2>
+                    <p class="stat-label">Net earnings from tips</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #ffebee;">
+                    <img src="/images/lock.png" alt="">
+                </div>
+                <div class="stat-content">
+                    <h2 class="stat-value">$19.00</h2>
+                    <p class="stat-label">Net earnings from Pay Per View</p>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="stat-card">
+                <div class="stat-content revenue-stat">
+                    <h2 class="stat-value red-text">$0.00</h2>
+                    <p class="stat-label">Revenue today</p>
+                    <div class="percentage-change">
+                        <span>0%</span>
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-content revenue-stat">
+                    <h2 class="stat-value red-text">$0.00</h2>
+                    <p class="stat-label">Revenue this week</p>
+                    <div class="percentage-change negative">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>100.00%</span>
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-content revenue-stat">
+                    <h2 class="stat-value green-text">$9.50</h2>
+                    <p class="stat-label">Revenue this month</p>
+                    <div class="percentage-change positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>9.50%</span>
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Earnings Chart Section -->
+    <div class="chart-section">
+        <div class="chart-header">
+            <h2>Earnings Overview</h2>
+            <div class="chart-filters">
+                <div class="filter-group">
+                    <label for="chart-period">Time Period:</label>
+                    <select id="chart-period" class="filter-select">
+                        <option value="current">Current Month</option>
+                        <option value="last">Last Month</option>
+                        <option value="3months">Last 3 Months</option>
+                        <option value="6months">Last 6 Months</option>
+                        <option value="year">Last Year</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="chart-type">Earnings Type:</label>
+                    <select id="chart-type" class="filter-select">
+                        <option value="all">All Earnings</option>
+                        <option value="subscriptions">Subscriptions</option>
+                        <option value="tips">Tips</option>
+                        <option value="ppv">Pay Per View</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="earningsChart"></canvas>
+        </div>
+        <div class="chart-legend">
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #e91e63;"></span>
+                <span>Total Earnings</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #2196f3;"></span>
+                <span>Subscriptions</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #ff9800;"></span>
+                <span>Tips</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #4caf50;"></span>
+                <span>Pay Per View</span>
+            </div>
+        </div>
+    </div>
+</div>
+    
+  
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav">
+        <a href="index.html"><button class="nav-icon"><img src="/images/home.png" alt=""></button></a>
+        <a href="explore.html"><button class="nav-icon"><img src="/images/compass.png" alt=""></button></a>
+        <a href="shop.html"><button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button></a>
+        <a href="messages.html"><button class="nav-icon"><img src="/images/send.png" alt=""></button></a>
+        <a href="notification.html"><button class="nav-icon"><img src="/images/bell.png" alt=""></button></a>
+      </nav>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

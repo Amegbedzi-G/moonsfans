@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoonFans - Social Platform</title>
+  <link rel="stylesheet" href="/css/index.css ">
+  <link rel="stylesheet" href="/css/messages.css ">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="logo">
+        <h1><span class="logo-moon">Moon</span><span class="logo-fans">Fans</span></h1>
+      </div>
+      
+      <div class="desktop-nav">
+       <a href="index.html"><button class="nav-icon"><img src="/images/home.png" alt=""></button></a>
+      <a href="explore.html"><button class="nav-icon"><img src="/images/compass.png" alt=""></button></a>
+      <a href="shop.html"><button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button></a>
+      <a href="messages.html"><button class="nav-icon"><img src="/images/send.png" alt=""></button></a>
+      <a href="notification.html"><button class="nav-icon"><img src="/images/bell.png" alt=""></button></a>
+        <div class="profile-pic">
+        </div>
+        <button class="edit-page-btn">Edit my page <span>&rarr;</span></button>
+      </div>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <i data-feather="menu"></i>
+      </button>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav>
+        <button class="menu-item active">
+          <img src="/images/menu.png" alt="">
+          <span>Home</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="user"></i>
+          <span>My page</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="bar-chart-2"></i>
+          <span>Dashboard</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="shopping-bag"></i>
+          <span>Purchased</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="message-circle"></i>
+          <span>Messages</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="search"></i>
+          <span>Explore</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="star"></i>
+          <span>Subscriptions</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="bookmark"></i>
+          <span>Bookmarks</span>
+        </button>
+        <button class="edit-page-btn mobile-edit-btn">Edit my page <span>&rarr;</span></button>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="messages-list">
+          <div class="messages-header">
+              <button class="back-button">
+                 <img src="/images/back-arrow.png" style="width: 25px;" alt="">
+              </button>
+              <h1>Messages</h1>
+              <button class="compose-button">
+                  <img src="/images/write.png" style="width: 25px;" alt="">
+              </button>
+          </div>
+          
+          <div class="conversation-list">
+              <div class="conversation-item" data-user="steason">
+                  <div class="avatar-container">
+                      <img src="/images/swag1.jpg" alt="Steason's profile" class="avatar">
+                      <span class="status-dot"></span>
+                  </div>
+                  <div class="conversation-content">
+                      <div class="conversation-header">
+                          <div class="user-name">
+                              Steason
+                              <img src="/images/verify.png" style="width: 20px;" alt="">
+                          </div>
+                          <span class="time">2 months ago</span>
+                      </div>
+                      <p class="message-preview">
+                          <i class="fas fa-volume-up message-icon"></i>
+                          Join the private live stream from this link
+                      </p>
+                  </div>
+              </div>
+              
+              <div class="conversation-item" data-user="admin">
+                  <div class="avatar-container">
+                      <img src="/images/image.png" style="width: px;" alt="Admin's profile" class="avatar">
+                      <span class="status-dot"></span>
+                  </div>
+                  <div class="conversation-content">
+                      <div class="conversation-header">
+                          <div class="user-name">
+                              Admin
+                           <img src="/images/verify.png" style="width: 20px;" alt="">
+                          </div>
+                          <span class="time">4 months ago</span>
+                      </div>
+                      <p class="message-preview">
+                          <i class="fas fa-image message-icon"></i>
+                          Check my new Buttery SmoothLook!
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="empty-state">
+          <div class="empty-state-content">
+              <div class="icon-container">
+                  <i class="fas fa-paper-plane"></i>
+              </div>
+              <h2>Messages</h2>
+              <p>Inbox of your messages</p>
+              <button class="new-message-btn">
+                  <i class="fas fa-plus"></i>
+                  New message
+              </button>
+          </div>
+      </div>
+
+      <div class="chat-area">
+          <div class="chat-header">
+              <button class="back-to-list">
+                 <img src="/images/back-arrow.png" style="width: 20px;" alt="">
+              </button>
+              <div class="chat-user-info">
+                  <img src="/images/swag.jpg" alt="User profile" class="chat-avatar">
+                  <div class="chat-user-details">
+                      <div class="chat-user-name">
+                          <span id="current-chat-name">User</span>
+                          <img src="/images/verify.png" style="width: 20px;" alt="">
+                      </div>
+                      <span class="chat-user-status">Online</span>
+                  </div>
+              </div>
+              <div class="chat-actions">
+                  <button class="chat-action-btn">
+                      <img src="/images/voice.png" style="width: 25px;" alt="">
+                  </button>
+                  <button class="chat-action-btn">
+                      <img src="/images/cam-recorder.png" style="width: 25px;" alt="">
+                  </button>
+                  <button class="chat-action-btn">
+                      <img src="/images/menu.png" style="width: 25px;" alt="">
+                  </button>
+              </div>
+          </div>
+
+          <div class="chat-messages" id="chat-messages">
+              <!-- Messages will be dynamically added here -->
+          </div>
+
+          <div class="chat-input-area">
+              <button class="attachment-btn">
+                  <i class="fas fa-paperclip"></i>
+              </button>
+              <div class="message-input-container">
+                  <input type="text" id="message-input" placeholder="Type a message...">
+                  <button class="emoji-btn">
+                      <img src="/images/smiling-face.png" style="width: 25px;" alt="">
+                  </button>
+              </div>
+              <button class="send-btn" id="send-message">
+                 <img src="/images/price-tag.png" style="width: 25px;" alt="">
+              </button>
+          </div>
+      </div>
+  </div>
+
+  
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav">
+        <a href="index.html"><button class="nav-icon"><img src="/images/home.png" alt=""></button></a>
+        <a href="explore.html"><button class="nav-icon"><img src="/images/compass.png" alt=""></button></a>
+        <a href="shop.html"><button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button></a>
+        <a href="messages.html"><button class="nav-icon"><img src="/images/send.png" alt=""></button></a>
+        <a href="notification.html"><button class="nav-icon"><img src="/images/bell.png" alt=""></button></a>
+      </nav>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

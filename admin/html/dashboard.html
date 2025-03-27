@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="sidenav" id="mySidenav">
+        <button class="close-btn" onclick="closeNav()">×</button>
+        
+        <a href="#"><div class="nav-icon"><img src="/images/dashboard.png" alt=""></div>Dashboard</a>
+        <a href="#"><div class="nav-icon"><img src="/images/setting.png" alt=""></div>General Settings</a>
+        
+        <div class="menu-section">
+            <a href="#"><div class="nav-icon"><img src="/images/red-flag.png" alt=""></div>Reports<span class="notification-badge">1</span></a>
+            <a href="#"><div class="nav-icon"><img src="/images/cash.png" alt=""></div>Withdrawals<span class="notification-badge">2</span></a>
+            <a href="#"><div class="nav-icon"><img src="/images/verify.png" alt=""></div>Verification Requests<span class="notification-badge">2</span></a>
+            <a href="#"><div class="nav-icon">💵</div>Deposits<span class="notification-badge">4</span></a>
+        </div>
+
+        <div class="menu-section">
+            <a href="#"><div class="nav-icon"><img src="/images/write.png" alt=""></div>Posts<span class="notification-badge">2</span></a>
+            <a href="#"><div class="nav-icon">🔄</div>Subscriptions</a>
+            <a href="#"><div class="nav-icon"><img src="/images/credit-card1.png" alt=""></div>Transactions</a>
+            <a href="#"><div class="nav-icon">👥</div>Members</a>
+            <a href="#"><div class="nav-icon">📣</div>Advertising</a>
+            <a href="#"><div class="nav-icon">💬</div>Comments and replies</a>
+            <a href="#"><div class="nav-icon">✉️</div>Messages</a>
+            <a href="#"><div class="nav-icon">📢</div>Announcements</a>
+        </div>
+
+        <div class="menu-section">
+            <a href="#"><div class="nav-icon">🔧</div>Maintenance mode</a>
+            <a href="#"><div class="nav-icon">💳</div>Billing Information</a>
+            <a href="#"><div class="nav-icon">💱</div>Tax Rates</a>
+            <a href="#"><div class="nav-icon">🌎</div>Countries / States</a>
+            <a href="#"><div class="nav-icon">📧</div>Email settings</a>
+        </div>
+
+        <div class="menu-section">
+            <a href="#"><div class="nav-icon">🎥</div>Live Streaming</a>
+            <a href="#"><div class="nav-icon">🔒</div>Live Streaming Requests Private</a>
+            <a href="#"><div class="nav-icon">🔔</div>Push Notifications</a>
+            <a href="#"><div class="nav-icon">📱</div>Stories</a>
+        </div>
+
+        <div class="menu-section">
+            <a href="#"><div class="nav-icon">🛍️</div>Shop</a>
+            <a href="#"><div class="nav-icon">📦</div>Products</a>
+            <a href="#"><div class="nav-icon">📑</div>Shop Categories</a>
+            <a href="#"><div class="nav-icon">💰</div>Sales</a>
+            <a href="#"><div class="nav-icon">💾</div>Storage</a>
+        </div>
+
+        <div class="menu-section">
+            <a href="#"><div class="nav-icon">🎨</div>Theme</a>
+            <a href="#"><div class="nav-icon">💻</div>Custom CSS/JS</a>
+            <a href="#"><div class="nav-icon">👥</div>Referrals</a>
+            <a href="#"><div class="nav-icon">🌐</div>Languages</a>
+            <a href="#"><div class="nav-icon">📁</div>Categories</a>
+            <a href="#"><div class="nav-icon">📄</div>Pages</a>
+            <a href="#"><div class="nav-icon">📝</div>Blog</a>
+        </div>
+
+        <div class="menu-section">
+            <a href="#"><div class="nav-icon">💳</div>Payment Settings</a>
+            <a href="#"><div class="nav-icon">👤</div>Profiles Social</a>
+            <a href="#"><div class="nav-icon">🔑</div>Social Login</a>
+            <a href="#"><div class="nav-icon">🔍</div>Google</a>
+            <a href="#"><div class="nav-icon">📱</div>PWA</a>
+        </div>
+    </div>
+    <div class="header">
+        <button class="menu-button" onclick="openNav()">☰</button>
+        <a href="/html/index.html" class="view-site">
+            View site <span style="margin-left: 5px">↗</span>
+            <img src="/images/swag.jpg" alt="Profile" />
+        </a>
+    </div>
+
+    <h1 class="dashboard-title">Dashboard <span class="version">v5.4</span></h1>
+
+    <div class="stats-container">
+        <div class="stat-card">
+            <div class="stat-icon">↻</div>
+            <div class="stat-content">
+                <div class="stat-number">33</div>
+                <div class="stat-label">Subscriptions</div>
+            </div>
+            <a href="#" class="view-all">View all →</a>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">💵</div>
+            <div class="stat-content">
+                <div class="stat-number">$213.80</div>
+                <div class="stat-label">Earnings Net (Admin)</div>
+            </div>
+            <a href="#" class="view-all">See all transactions →</a>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">👥</div>
+            <div class="stat-content">
+                <div class="stat-number">42</div>
+                <div class="stat-label">Members</div>
+            </div>
+            <a href="#" class="view-all">View all →</a>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">📝</div>
+            <div class="stat-content">
+                <div class="stat-number">46</div>
+                <div class="stat-label">Posts</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-info">
+        <span class="lock-icon">🔒</span>
+        moonfanspro.goodcoderz.com — Private
+    </div>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").classList.add("active");
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").classList.remove("active");
+            document.getElementById("overlay").style.display = "none";
+        }
+
+        // Close nav when clicking overlay
+        document.getElementById("overlay").addEventListener("click", closeNav);
+    </script>
+</body>
+</html>

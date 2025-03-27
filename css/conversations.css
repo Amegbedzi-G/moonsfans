@@ -1,0 +1,284 @@
+/* Conversations Page Specific Styles */
+
+/* Toggle Options */
+.conversations-settings {
+    max-width: 800px;
+}
+
+.toggle-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.toggle-text {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Price Input */
+.price-input {
+    position: relative;
+    max-width: 300px;
+}
+
+.currency-symbol {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-weight: bold;
+}
+
+.price-input input {
+    padding-left: 25px;
+}
+
+/* File Upload Area */
+.file-upload-area {
+    margin-top: 10px;
+}
+
+.file-upload-box {
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.file-upload-box:hover {
+    border-color: #e91e63;
+}
+
+.upload-icon {
+    font-size: 40px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.upload-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.browse-btn {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.browse-btn:hover {
+    background-color: #d81b60;
+}
+
+/* Uploaded File */
+.uploaded-file {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.file-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #e91e63;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.file-info {
+    flex: 1;
+    overflow: hidden;
+}
+
+.file-name {
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 3px;
+}
+
+.file-size {
+    font-size: 12px;
+    color: #888;
+}
+
+.file-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.file-action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.file-action-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.file-action-btn.download {
+    color: #333;
+}
+
+.file-action-btn.delete {
+    color: #e91e63;
+}
+
+/* Welcome Message Textarea */
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #e91e63;
+}
+
+/* Save Button */
+.save-button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: #d81b60;
+}
+
+/* Mobile Sidebar Toggle Button */
+.mobile-sidebar-toggle {
+    display: none;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.mobile-sidebar-toggle i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+}
+
+.mobile-sidebar-toggle.active i {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Mobile styles */
+@media (max-width: 992px) {
+    /* Show the toggle button */
+    .mobile-sidebar-toggle {
+        display: block;
+    }
+    
+    /* Hide sidebar by default on mobile */
+    .sidebar {
+        display: none;
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 0;
+    }
+    
+    /* When sidebar is active */
+    .sidebar.active {
+        display: block;
+    }
+    
+    .container {
+        flex-direction: column;
+        margin-bottom: 60px; /* Space for mobile nav */
+    }
+    
+    .content {
+        padding: 15px;
+    }
+    
+    .toggle-option {
+        padding: 12px 0;
+    }
+    
+    .file-upload-box {
+        padding: 20px;
+    }
+    
+    .uploaded-file {
+        flex-wrap: wrap;
+    }
+    
+    .file-actions {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 20px;
+    }
+    
+    .header p {
+        font-size: 12px;
+    }
+    
+    .toggle-text {
+        font-size: 13px;
+        max-width: 70%;
+    }
+    
+    .file-name {
+        max-width: 200px;
+    }
+}

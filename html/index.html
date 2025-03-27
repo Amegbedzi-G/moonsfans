@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoonFans - Social Platform</title>
+  <link rel="stylesheet" href="/css/index.css ">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="logo">
+        <h1><span class="logo-moon"><img src="/images/m.svg" style="width: 65px;" alt="">oon</span><span class="logo-fans">Fans</span></h1>
+      </div>
+      
+      <div class="desktop-nav">
+        <a href="index.html"><button class="nav-icon"><img src="/images/home.png" alt=""></button></a>
+      <a href="explore.html"><button class="nav-icon"><img src="/images/compass.png" alt=""></button></a>
+      <a href="shop.html"><button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button></a>
+      <a href="messages.html"><button class="nav-icon"><img src="/images/send.png" alt=""></button></a>
+      <a href="notification.html"><button class="nav-icon"><img src="/images/bell.png" alt=""></button></a>
+        <div class="profile-pic">
+          <img src="/images/info.png" alt="Profile">
+        </div>
+        <button class="edit-page-btn">Edit my page <span>&rarr;</span></button>
+      </div>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <i data-feather="menu"></i>
+      </button>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav>
+        <button class="menu-item active">
+          <img src="/images/menu.png" alt="">
+          <span>Home</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="user"></i>
+          <span>My page</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="bar-chart-2"></i>
+          <span>Dashboard</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="shopping-bag"></i>
+          <span>Purchased</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="message-circle"></i>
+          <span>Messages</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="search"></i>
+          <span>Explore</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="star"></i>
+          <span>Subscriptions</span>
+        </button>
+        <button class="menu-item">
+          <i data-feather="bookmark"></i>
+          <span>Bookmarks</span>
+        </button>
+        <button class="edit-page-btn mobile-edit-btn">Edit my page <span>&rarr;</span></button>
+      </nav>
+    </div>
+
+    <div class="main-container">
+      <!-- Left Sidebar (Desktop only) -->
+      <aside class="left-sidebar">
+        <nav>
+          <button class="menu-item active">
+            <i data-feather="home"></i>
+            <span>Home</span>
+          </button>
+          <button class="menu-item">
+            <i data-feather="user"></i>
+            <span>My page</span>
+          </button>
+          <a href="dashboard.html"> 
+             <button class="menu-item">
+            <i data-feather="bar-chart-2"></i>
+            <span>Dashboard</span>
+          </button>
+        </a>
+          <button class="menu-item">
+            <i data-feather="shopping-bag"></i>
+            <span>Purchased</span>
+          </button>
+          <button class="menu-item">
+            <i data-feather="message-circle"></i>
+            <span>Messages</span>
+          </button>
+          <button class="menu-item">
+            <i data-feather="search"></i>
+            <span>Explore</span>
+          </button>
+          <button class="menu-item">
+            <i data-feather="star"></i>
+            <span>Subscriptions</span>
+          </button>
+          <button class="menu-item">
+            <i data-feather="bookmark"></i>
+            <span>Bookmarks</span>
+          </button>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="story-section">
+          <div class="story-container">
+            <img src="/images/image.png" alt="Story" class="story-img">
+            <div class="add-story-btn">
+              <span>+</span>
+              <span>Add story</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-creator">
+          <div class="post-creator-header">
+            <div class="profile-pic">
+              <img src="/images/image.png" alt="Profile">
+            </div>
+            <input type="text" placeholder="Write something..." class="post-input">
+          </div>
+          <div class="post-creator-tools">
+            <div class="tool-icons">
+              <button class="tool-icon"><img src="/images/gallery.png" alt=""><i data-feather="image"></i></button>
+              <button class="tool-icon"><img src="/images/zip-file.png" alt=""></button>
+              <button class="tool-icon"><img src="/images/price-tag.png" alt=""></button>
+              <button class="tool-icon"><img src="/images/lock.png" alt=""></button>
+              <button class="tool-icon"><img src="/images/live.png" alt=""></button>
+              <button class="tool-icon"><img src="/images/calendar.png" alt=""></button>
+              <button class="tool-icon">Aa</button>
+              <button class="tool-icon"><img src="/images/smiling-face.png" alt=""></button>
+            </div>
+          </div>
+          <div class="publish-container">
+            <button class="publish-btn">Publish</button>
+          </div>
+          <span class="char-count">250</span>
+        </div>
+
+        <!-- Wild Sales Post -->
+        <div class="post-card">
+          <div class="post-content">
+            <div class="post-image">
+              <img src="/images/swag.jpg" alt="Wild Sale">
+            </div>
+            <div class="post-details">
+              <h3 class="post-title">Wild Sales</h3>
+              <p class="post-text">BlackFriday Wild Sale!!!</p>
+              <p class="post-meta">Advertising</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="post-container">
+          <div class="post-top">
+            <div class="avatar-wrapper">
+              <img src="/images/image.png" alt="Siessou">
+            </div>
+            <div class="post-details">
+              <div class="post-header-section">
+                <div>
+                  <h3 class="user-display-name">Siessou <img src="/images/verify.png" alt="" style="width: 25px;"> <span class="user-username">@Sies</span></h3>
+                  <p class="timestamp">8 days ago</p>
+                </div>
+                <button class="options-btn">•••</button>
+              </div>
+              <p class="post-content">Mi nuevo foto</p>
+            </div>
+          </div>
+          <div class="post-media">
+            <img src="/images/image.png" alt="User post image" style="width: 100%; height: auto;">
+            <div class="image-attribution">@moonfans generated content</div>
+          </div>
+          <div class="post-interactions">
+            <div class="interaction-buttons">
+              <button class="btn-action like-button">
+                <img src="/images/likes.png" alt="" style="width: 25px;">
+              </button>
+              <button class="btn-action comment-button">
+                <img src="/images/chat.png" alt="" style="width: 25px;">
+              </button>
+              <button class="btn-action share-button">
+                <img src="/images/send.png" alt="" style="width: 25px;">
+              </button>
+              <button class="btn-action tip-button">
+                <div class="icon-tip">
+                  <img src="/images/tip.png" alt="">
+                </div>
+                <span>Tip</span>
+              </button>
+            </div>
+            <button class="btn-bookmark">
+              <img src="/images/bookmark.png" alt="" style="width: 25px;">
+            </button>
+          </div>
+          <div class="post-metrics">
+            <span>0 likes</span> • <span>0 comments</span>
+          </div>
+        </div>
+        
+       
+        <div class="creators-section mobile-only">
+          <div class="creators-header">
+            <h2>Explore Creators</h2>
+            <div class="creators-actions">
+              <button><img src="/images/price-tag.png" style="width: 25px;" alt=""></button>
+              <button><img src="/images/refresh.png" style="width: 25px;" alt=""></button>
+            </div>
+          </div>
+          
+          <div class="creators-list">
+            <!-- Creator 1 -->
+            <div class="creator-card dark">
+              <div class="creator-info">
+                <div class="creator-pic">
+                  <img src="/images/swag.jpg" alt="sarah3">
+                </div>
+                <div class="creator-details">
+                  <h3>sarah3</h3>
+                  <p>@sarah3</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Creator 2 -->
+            <div class="creator-card with-bg">
+              <img src="/images/image.png" alt="Beach" class="creator-bg">
+              <div class="free-tag">FREE</div>
+              <div class="creator-overlay">
+                <div class="creator-info">
+                  <div class="creator-pic">
+                    <img src="/images/image.png" alt="amelia5">
+                  </div>
+                  <div class="creator-details">
+                    <h3>amelia5</h3>
+                    <p>@amelia5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Creator 3 -->
+            <div class="creator-card with-bg">
+              <img src="/images/image.png" alt="Beach Dock" class="creator-bg">
+              <div class="creator-overlay">
+                <div class="creator-info">
+                  <div class="creator-pic">
+                    <img src="/images/image.png" alt="jane7">
+                  </div>
+                  <div class="creator-details">
+                    <h3>jane7</h3>
+                    <p>@jane7</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+       
+         
+       
+        
+
+      </main>
+
+      <!-- Right Sidebar (Desktop only) -->
+      <aside class="right-sidebar">
+        <div class="creators-section">
+          <div class="creators-header">
+            <h2>Explore Creators</h2>
+            <div class="creators-actions">
+              <button><img src="/images/price-tag.png" style="width: 25px;" alt=""></button>
+              <button><img src="/images/refresh.png" style="width: 25px;" alt=""></button>
+            </div>
+          </div>
+          
+          <div class="creators-list">
+            <!-- Creator 1 -->
+            <div class="creator-card dark">
+              <div class="creator-info">
+                <div class="creator-pic">
+                  <img src="/images/image.png" alt="sarah3">
+                </div>
+                <div class="creator-details">
+                  <h3>sarah3</h3>
+                  <p>@sarah3</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Creator 2 -->
+            <div class="creator-card with-bg">
+              <img src="/images/swag.jpg" alt="Beach" class="creator-bg">
+              <div class="free-tag">FREE</div>
+              <div class="creator-overlay">
+                <div class="creator-info">
+                  <div class="creator-pic">
+                    <img src="/images/image.png" alt="amelia5">
+                  </div>
+                  <div class="creator-details">
+                    <h3>amelia5</h3>
+                    <p>@amelia5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Creator 3 -->
+            <div class="creator-card with-bg">
+              <img src="/images/image.png" alt="Beach Dock" class="creator-bg">
+              <div class="creator-overlay">
+                <div class="creator-info">
+                  <div class="creator-pic">
+                    <img src="/images/image.png" alt="jane7">
+                  </div>
+                  <div class="creator-details">
+                    <h3>jane7</h3>
+                    <p>@jane7</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Footer (Desktop only) -->
+    <footer class="footer desktop-only">
+      <div class="footer-content">
+        <p class="copyright">© 2025 MoonFans App. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy</a>
+          <a href="#">About us</a>
+          <a href="#">How it works</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Contact us</a>
+          <a href="#">Blog</a>
+          <a href="#">Install Web App</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav">
+      <a href="index.html"><button class="nav-icon"><img src="/images/home.png" alt=""></button></a>
+      <a href="explore.html"><button class="nav-icon"><img src="/images/compass.png" alt=""></button></a>
+      <a href="shop.html"><button class="nav-icon"><img src="/images/shopping-bag.png" alt=""></button></a>
+      <a href="messages.html"><button class="nav-icon"><img src="/images/send.png" alt=""></button></a>
+      <a href="notification.html"><button class="nav-icon"><img src="/images/bell.png" alt=""></button></a>
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
